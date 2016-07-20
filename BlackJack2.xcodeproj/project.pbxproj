@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05CAE9CC828F9AD039982E8A /* Pods_BlackJack2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9295E10F2BC11612C5795D9 /* Pods_BlackJack2.framework */; };
 		7DADE39C1D3FF01400792225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE39B1D3FF01400792225 /* AppDelegate.swift */; };
 		7DADE39E1D3FF01400792225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE39D1D3FF01400792225 /* ViewController.swift */; };
 		7DADE3A11D3FF01400792225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE39F1D3FF01400792225 /* Main.storyboard */; };
 		7DADE3A31D3FF01400792225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3A21D3FF01400792225 /* Assets.xcassets */; };
 		7DADE3A61D3FF01400792225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3A41D3FF01400792225 /* LaunchScreen.storyboard */; };
 		7DADE3B11D3FF01400792225 /* BlackJack2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE3B01D3FF01400792225 /* BlackJack2Tests.swift */; };
+		A320D23B271CB5BD2EF9C21C /* Pods_BlackJack2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A86BBA58EDE099594120BCA /* Pods_BlackJack2Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2/Pods-BlackJack2.release.xcconfig"; sourceTree = "<group>"; };
+		26A8D13728EFAF89138EE61A /* Pods-BlackJack2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A86BBA58EDE099594120BCA /* Pods_BlackJack2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackJack2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C5C5FBC9386BDD32BA8AA5 /* Pods-BlackJack2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7DADE3981D3FF01400792225 /* BlackJack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE39B1D3FF01400792225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DADE39D1D3FF01400792225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		7DADE3AC1D3FF01400792225 /* BlackJack2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackJack2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE3B01D3FF01400792225 /* BlackJack2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackJack2Tests.swift; sourceTree = "<group>"; };
 		7DADE3B21D3FF01400792225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2/Pods-BlackJack2.debug.xcconfig"; sourceTree = "<group>"; };
+		F9295E10F2BC11612C5795D9 /* Pods_BlackJack2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackJack2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CAE9CC828F9AD039982E8A /* Pods_BlackJack2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A320D23B271CB5BD2EF9C21C /* Pods_BlackJack2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A9BFB0FB608C4D27977976 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */,
+				118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */,
+				26A8D13728EFAF89138EE61A /* Pods-BlackJack2Tests.debug.xcconfig */,
+				47C5C5FBC9386BDD32BA8AA5 /* Pods-BlackJack2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75A46E4D7EB8BEB2705C510F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9295E10F2BC11612C5795D9 /* Pods_BlackJack2.framework */,
+				3A86BBA58EDE099594120BCA /* Pods_BlackJack2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DADE38F1D3FF01400792225 = {
 			isa = PBXGroup;
 			children = (
 				7DADE39A1D3FF01400792225 /* BlackJack2 */,
 				7DADE3AF1D3FF01400792225 /* BlackJack2Tests */,
 				7DADE3991D3FF01400792225 /* Products */,
+				05A9BFB0FB608C4D27977976 /* Pods */,
+				75A46E4D7EB8BEB2705C510F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE3B51D3FF01400792225 /* Build configuration list for PBXNativeTarget "BlackJack2" */;
 			buildPhases = (
+				21A718037EE03ACE3417CE97 /* [CP] Check Pods Manifest.lock */,
 				7DADE3941D3FF01400792225 /* Sources */,
 				7DADE3951D3FF01400792225 /* Frameworks */,
 				7DADE3961D3FF01400792225 /* Resources */,
+				C3DCDFA654E8FA61E1E86D59 /* [CP] Embed Pods Frameworks */,
+				331C531B09D21A248CE94AD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE3B81D3FF01400792225 /* Build configuration list for PBXNativeTarget "BlackJack2Tests" */;
 			buildPhases = (
+				E1A5F26D27932EC06082EF57 /* [CP] Check Pods Manifest.lock */,
 				7DADE3A81D3FF01400792225 /* Sources */,
 				7DADE3A91D3FF01400792225 /* Frameworks */,
 				7DADE3AA1D3FF01400792225 /* Resources */,
+				915311E541728D64E69DA739 /* [CP] Embed Pods Frameworks */,
+				09B4D724E82ECFA3663DEF84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B4D724E82ECFA3663DEF84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A718037EE03ACE3417CE97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		331C531B09D21A248CE94AD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackJack2/Pods-BlackJack2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915311E541728D64E69DA739 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DCDFA654E8FA61E1E86D59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackJack2/Pods-BlackJack2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A5F26D27932EC06082EF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DADE3941D3FF01400792225 /* Sources */ = {
@@ -325,6 +456,7 @@
 		};
 		7DADE3B61D3FF01400792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
@@ -336,6 +468,7 @@
 		};
 		7DADE3B71D3FF01400792225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
@@ -347,6 +480,7 @@
 		};
 		7DADE3B91D3FF01400792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A8D13728EFAF89138EE61A /* Pods-BlackJack2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BlackJack2Tests/Info.plist;
@@ -359,6 +493,7 @@
 		};
 		7DADE3BA1D3FF01400792225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C5C5FBC9386BDD32BA8AA5 /* Pods-BlackJack2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BlackJack2Tests/Info.plist;
@@ -388,6 +523,7 @@
 				7DADE3B71D3FF01400792225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DADE3B81D3FF01400792225 /* Build configuration list for PBXNativeTarget "BlackJack2Tests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +532,7 @@
 				7DADE3BA1D3FF01400792225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
