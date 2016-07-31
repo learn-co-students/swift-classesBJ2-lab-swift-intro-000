@@ -16,40 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The winner is…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNE-hn-VlL">
-                                <rect key="frame" x="144" y="103" width="312.5" height="57.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWc-ee-qw3">
-                                <rect key="frame" x="286" y="173" width="28.5" height="66"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="48"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-lZ-JBM">
-                                <rect key="frame" x="264" y="285" width="73" height="30"/>
-                                <state key="normal" title="Play Game"/>
-                                <connections>
-                                    <action selector="playGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdB-Wp-8ip"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="xNE-hn-VlL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="1SJ-is-bxM"/>
-                            <constraint firstItem="mWc-ee-qw3" firstAttribute="top" secondItem="xNE-hn-VlL" secondAttribute="bottom" constant="12.5" id="2aV-Ce-lS7"/>
-                            <constraint firstItem="xNE-hn-VlL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUh-cp-FB4"/>
-                            <constraint firstItem="B2t-lZ-JBM" firstAttribute="top" secondItem="mWc-ee-qw3" secondAttribute="bottom" constant="46" id="f8E-EK-1ft"/>
-                            <constraint firstItem="B2t-lZ-JBM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qd8-hL-rMR"/>
-                            <constraint firstItem="mWc-ee-qw3" firstAttribute="centerX" secondItem="xNE-hn-VlL" secondAttribute="centerX" id="uKe-eU-sCl"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="winnerLabel" destination="mWc-ee-qw3" id="hgc-Ry-zFI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
