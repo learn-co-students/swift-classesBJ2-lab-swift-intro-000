@@ -9,17 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var winnerLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    func playGame() -> Player {
+        var turn = "player"
+        dealer.deal()
+
+        if let _ = dealer.winner {
+            dealer.award()
+        }
+
+        while dealer.winner == nil {
+            let player = turn == "player" ? dealer.house : dealer.player
+            dealer.turn(player)
+            turn = turn == "player" ? "house" : "player"
+        }
+
+        dealer.award()
+        return dealer.winner!
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
-
