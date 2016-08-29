@@ -1,16 +1,16 @@
-# Blackjack Part 2
+# Blackjack Lab: Part 2
 
 ![NameOfPerson](http://i.imgur.com/1jG7JnQ.jpg?1)  
 
 > Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in. -[Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov)
  
-## Learning Objectives
+## Overview
 
-* Complete the lab
+In this lab, you will finish the UI for the simple Blackjack simulation you wrote in the previous lab.
 
 ## Introduction
 
-In this lab, you will finish the UI for the simple blackjack simulation you wrote in the previous lab. The UI will have a button the user can press to run a simulation. Once the game simulation has been completed, the UI should be updated to show the winner of the blackjack game.
+The UI will have a button the user can press to run a simulation. Once the game simulation has been completed, the UI should be updated to show the winner of the blackjack game.
 
 The UI will look like this:
 
