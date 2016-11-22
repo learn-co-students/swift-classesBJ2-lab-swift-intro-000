@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var winnerLabel: UILabel!
+    @IBOutlet weak var playGameButton: UIButton!
+    var dealer = Dealer()
+    
+    // stored property, and then instatiate one inside the func.
+    @IBAction func playGamePressed(_ sender: UIButton) {
+        dealer = Dealer()
+        let winner = playGame()
+        winnerLabel.text = winner.name
+    }
 
     func playGame() -> Player {
         var turn = "player"
