@@ -32,5 +32,7 @@ class Card {
     init(suit: String, rank: String) {
         self.suit = suit
         self.rank = rank
+        
+        print ("NORI")
     }
 }
