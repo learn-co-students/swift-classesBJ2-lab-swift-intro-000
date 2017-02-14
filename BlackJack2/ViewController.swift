@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var dealer: Dealer = Dealer()
+    
     @IBOutlet weak var winnerLabel: UILabel!
 
     func playGame() -> Player {
@@ -29,4 +32,12 @@ class ViewController: UIViewController {
         return dealer.winner!
     }
 
+    @IBAction func playGamePressed(sender: AnyObject) {
+        
+        self.dealer = Dealer()
+        playGame()
+        winnerLabel.text = dealer.winner?.name
+    }
+    
+    
 }
