@@ -1,10 +1,9 @@
 //
 //  ViewController.swift
 //  ClassesMagicFun
-//
-//  Created by Jim Campagno on 7/20/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
-//
+
+//  DataComm Network Solutions
 
 import UIKit
 
