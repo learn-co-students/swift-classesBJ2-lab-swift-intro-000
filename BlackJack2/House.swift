@@ -13,7 +13,7 @@ class House: Player {
         super.init(name: "House")
     }
 
-    override func willHit(bet: UInt) -> Bool {
+    override func willHit(_ bet: UInt) -> Bool {
         return handValue < 17
     }
 }

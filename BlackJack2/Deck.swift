@@ -33,6 +33,14 @@ class Deck {
 
     func shuffle() {
         nextCard = 0
-        cards.shuffleInPlace()
+        shuffleInP()
+    }
+    
+    func shuffleInP() {
+        var tempDeck: [Card] = []
+        for _ in cards {
+        tempDeck.append(cards.remove(at: Int(arc4random_uniform(UInt32(cards.count)))))
+        }
+        cards = tempDeck
     }
 }
