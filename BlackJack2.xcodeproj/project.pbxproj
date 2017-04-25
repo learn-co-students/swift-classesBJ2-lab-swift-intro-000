@@ -18,7 +18,6 @@
 		B7AA49501D4DAEFA00E24C37 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA494A1D4DAEFA00E24C37 /* Deck.swift */; };
 		B7AA49511D4DAEFA00E24C37 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA494B1D4DAEFA00E24C37 /* House.swift */; };
 		B7AA49521D4DAEFA00E24C37 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA494C1D4DAEFA00E24C37 /* Player.swift */; };
-		B7AA49531D4DAEFA00E24C37 /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA494D1D4DAEFA00E24C37 /* Shuffle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		B7AA494A1D4DAEFA00E24C37 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		B7AA494B1D4DAEFA00E24C37 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		B7AA494C1D4DAEFA00E24C37 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		B7AA494D1D4DAEFA00E24C37 /* Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		F9295E10F2BC11612C5795D9 /* Pods_BlackJack2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackJack2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +101,6 @@
 				B7AA494A1D4DAEFA00E24C37 /* Deck.swift */,
 				B7AA494B1D4DAEFA00E24C37 /* House.swift */,
 				B7AA494C1D4DAEFA00E24C37 /* Player.swift */,
-				B7AA494D1D4DAEFA00E24C37 /* Shuffle.swift */,
 				7DADE39F1D3FF01400792225 /* Main.storyboard */,
 				7DADE3A21D3FF01400792225 /* Assets.xcassets */,
 				7DADE3A41D3FF01400792225 /* LaunchScreen.storyboard */,
@@ -147,6 +144,8 @@
 				TargetAttributes = {
 					7DADE3971D3FF01400792225 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VWUE9JZKY9;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -239,7 +238,6 @@
 				B7AA49501D4DAEFA00E24C37 /* Deck.swift in Sources */,
 				B7AA494E1D4DAEFA00E24C37 /* Card.swift in Sources */,
 				B7AA49521D4DAEFA00E24C37 /* Player.swift in Sources */,
-				B7AA49531D4DAEFA00E24C37 /* Shuffle.swift in Sources */,
 				B7AA49511D4DAEFA00E24C37 /* House.swift in Sources */,
 				7DADE39C1D3FF01400792225 /* AppDelegate.swift in Sources */,
 			);
@@ -355,10 +353,12 @@
 			baseConfigurationReference = B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VWUE9JZKY9;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,10 +367,12 @@
 			baseConfigurationReference = 118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VWUE9JZKY9;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

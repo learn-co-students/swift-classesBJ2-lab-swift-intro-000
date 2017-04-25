@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    var dealer = Dealer()
+    
+    @IBAction func playGamePressed(_ sender: UIButton) {
+        dealer = Dealer()
+        let winner = playGame()
+        winnerLabel.text = winner.name
+    }
+    
 
     func playGame() -> Player {
         var turn = "player"
