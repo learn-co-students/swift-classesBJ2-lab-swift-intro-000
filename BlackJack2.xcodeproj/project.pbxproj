@@ -147,6 +147,8 @@
 				TargetAttributes = {
 					7DADE3971D3FF01400792225 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QTQW7QXE9E;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -355,10 +357,12 @@
 			baseConfigurationReference = B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QTQW7QXE9E;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,10 +371,12 @@
 			baseConfigurationReference = 118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QTQW7QXE9E;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
