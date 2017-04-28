@@ -48,7 +48,7 @@ class Dealer {
         winningPlayer = nil
     }
 
-    func placeBet(bet: UInt) -> Bool {
+    func placeBet(_ bet: UInt) -> Bool {
         guard player.canPlaceBet(bet) && house.canPlaceBet(bet) else { return false }
         currentBet = bet
         return true
@@ -69,7 +69,7 @@ class Dealer {
         }
     }
 
-    func turn(player: Player) {
+    func turn(_ player: Player) {
         while player.willHit(currentBet) && player.handSize <= 5 {
             player.dealCard(deck.drawCard()!)
         }
