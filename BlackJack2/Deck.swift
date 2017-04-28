@@ -33,6 +33,7 @@ class Deck {
 
     func shuffle() {
         nextCard = 0
-        cards.shuffleInP()
+        cards.shuffleDeck()
     }
+    
 }
