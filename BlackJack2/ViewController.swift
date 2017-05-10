@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    
+    let dealer = Dealer.init();
 
     func playGame() -> Player {
+        
         var turn = "player"
         dealer.deal()
 
