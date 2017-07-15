@@ -21,7 +21,9 @@ class Deck {
                 cards.append(card)
             }
         }
-        shuffle()
+        
+        cards.shuffleInPlace()
+        
     }
 
     func drawCard() -> Card? {
@@ -33,6 +35,9 @@ class Deck {
 
     func shuffle() {
         nextCard = 0
+        
+        
         cards.shuffleInPlace()
+        
     }
 }
