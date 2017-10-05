@@ -49,16 +49,16 @@ class Dealer {
     }
 
     func placeBet(bet: UInt) -> Bool {
-        guard player.canPlaceBet(bet) && house.canPlaceBet(bet) else { return false }
+        guard player.canPlaceBet(bet: bet) && house.canPlaceBet(bet: bet) else { return false }
         currentBet = bet
         return true
     }
 
     func deal() {
-        player.dealCard(deck.drawCard()!)
-        player.dealCard(deck.drawCard()!)
-        house.dealCard(deck.drawCard()!)
-        house.dealCard(deck.drawCard()!)
+        player.dealCard(card: deck.drawCard()!)
+        player.dealCard(card: deck.drawCard()!)
+        house.dealCard(card: deck.drawCard()!)
+        house.dealCard(card: deck.drawCard()!)
 
         if player.isBlackjack {
             winningPlayer = player
@@ -70,19 +70,19 @@ class Dealer {
     }
 
     func turn(player: Player) {
-        while player.willHit(currentBet) && player.handSize <= 5 {
-            player.dealCard(deck.drawCard()!)
+        while player.willHit(bet: currentBet) && player.handSize <= 5 {
+            player.dealCard(card: deck.drawCard()!)
         }
         playerTurns += 1
     }
 
     func award() {
         guard winner != nil else { return }
-        winner!.win(currentBet)
+        winner!.win(amount: currentBet)
         if let _ = winner as? House {
-            player.lose(currentBet)
+            player.lose(amount: currentBet)
         } else {
-            house.lose(currentBet)
+            house.lose(amount: currentBet)
         }
     }
 }
