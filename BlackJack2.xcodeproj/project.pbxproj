@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05CAE9CC828F9AD039982E8A /* Pods_BlackJack2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9295E10F2BC11612C5795D9 /* Pods_BlackJack2.framework */; };
+		37D337EA2008E5D200E8D4B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D337E92008E5D100E8D4B8 /* ViewController.swift */; };
 		7DADE39C1D3FF01400792225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE39B1D3FF01400792225 /* AppDelegate.swift */; };
-		7DADE39E1D3FF01400792225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE39D1D3FF01400792225 /* ViewController.swift */; };
 		7DADE3A11D3FF01400792225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE39F1D3FF01400792225 /* Main.storyboard */; };
 		7DADE3A31D3FF01400792225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3A21D3FF01400792225 /* Assets.xcassets */; };
 		7DADE3A61D3FF01400792225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3A41D3FF01400792225 /* LaunchScreen.storyboard */; };
@@ -24,11 +24,11 @@
 /* Begin PBXFileReference section */
 		118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2/Pods-BlackJack2.release.xcconfig"; sourceTree = "<group>"; };
 		26A8D13728EFAF89138EE61A /* Pods-BlackJack2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		37D337E92008E5D100E8D4B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A86BBA58EDE099594120BCA /* Pods_BlackJack2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackJack2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C5C5FBC9386BDD32BA8AA5 /* Pods-BlackJack2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJack2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJack2Tests/Pods-BlackJack2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7DADE3981D3FF01400792225 /* BlackJack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE39B1D3FF01400792225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DADE39D1D3FF01400792225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DADE3A01D3FF01400792225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DADE3A21D3FF01400792225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DADE3A51D3FF01400792225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		7DADE39A1D3FF01400792225 /* BlackJack2 */ = {
 			isa = PBXGroup;
 			children = (
+				37D337E92008E5D100E8D4B8 /* ViewController.swift */,
 				7DADE39B1D3FF01400792225 /* AppDelegate.swift */,
-				7DADE39D1D3FF01400792225 /* ViewController.swift */,
 				B7AA49481D4DAEFA00E24C37 /* Card.swift */,
 				B7AA49491D4DAEFA00E24C37 /* Dealer.swift */,
 				B7AA494A1D4DAEFA00E24C37 /* Deck.swift */,
@@ -147,6 +147,7 @@
 				TargetAttributes = {
 					7DADE3971D3FF01400792225 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CD29UMZJ5P;
 					};
 				};
 			};
@@ -235,12 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AA494F1D4DAEFA00E24C37 /* Dealer.swift in Sources */,
-				7DADE39E1D3FF01400792225 /* ViewController.swift in Sources */,
 				B7AA49501D4DAEFA00E24C37 /* Deck.swift in Sources */,
 				B7AA494E1D4DAEFA00E24C37 /* Card.swift in Sources */,
 				B7AA49521D4DAEFA00E24C37 /* Player.swift in Sources */,
 				B7AA49531D4DAEFA00E24C37 /* Shuffle.swift in Sources */,
 				B7AA49511D4DAEFA00E24C37 /* House.swift in Sources */,
+				37D337EA2008E5D200E8D4B8 /* ViewController.swift in Sources */,
 				7DADE39C1D3FF01400792225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,10 +356,12 @@
 			baseConfigurationReference = B04BD0EDD6E03FEE6DB82476 /* Pods-BlackJack2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CD29UMZJ5P;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -367,10 +370,12 @@
 			baseConfigurationReference = 118DE1040C5F430A8AA392A7 /* Pods-BlackJack2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CD29UMZJ5P;
 				INFOPLIST_FILE = BlackJack2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.BlackJack2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
