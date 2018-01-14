@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+ 
 class Card {
     let suit: String
     let rank: String
