@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    @IBAction func button(sender: UIButton) {
+    }
+    
     
     var dealer = Dealer()
 
