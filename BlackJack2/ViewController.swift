@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var dealer: Dealer = Dealer()
+    
+//    init() {
+//        dealer = Dealer()
+//    }
+    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     @IBOutlet weak var winnerLabel: UILabel!
 
     func playGame() -> Player {
@@ -21,7 +32,7 @@ class ViewController: UIViewController {
 
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
+            dealer.turn(player: player)
             turn = turn == "player" ? "house" : "player"
         }
 
@@ -29,4 +40,11 @@ class ViewController: UIViewController {
         return dealer.winner!
     }
 
+    @IBAction func playGamePressed(_ sender: Any) {
+        
+        let winner = playGame()
+        
+        winnerLabel.text = winner.name
+    }
+    
 }
