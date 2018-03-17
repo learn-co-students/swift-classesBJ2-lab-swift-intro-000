@@ -15,14 +15,17 @@ class Deck {
     init() {
         nextCard = 0
         cards = []
-        for suit in ["♠️", "♣️", "♥️", "♦️"] {
-            for rank in ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"] {
+        let suits = ["♠️", "♣️", "♥️", "♦️"]
+        let ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+        for suit in suits {
+            for rank in ranks {
                 let card = Card(suit: suit, rank: rank)
                 cards.append(card)
             }
         }
         shuffle()
     }
+    
 
     func drawCard() -> Card? {
         guard nextCard < cards.count else { return nil }
