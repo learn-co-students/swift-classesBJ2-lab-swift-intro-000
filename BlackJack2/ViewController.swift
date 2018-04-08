@@ -9,8 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var winnerLabel: UILabel!
-
+    @IBOutlet weak var gameButton: UIButton!
+    
+    var dealer = Dealer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func playGamePressed(_ sender: UIButton){
+        dealer = Dealer()
+        let winner = playGame()
+        winnerLabel.text = winner.name
+    }
+    
     func playGame() -> Player {
         var turn = "player"
         dealer.deal()
