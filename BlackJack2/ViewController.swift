@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    var dealer = Dealer()
 
     func playGame() -> Player {
         var turn = "player"
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
 
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
+            dealer.turn(player: player)
             turn = turn == "player" ? "house" : "player"
         }
 
@@ -29,4 +31,11 @@ class ViewController: UIViewController {
         return dealer.winner!
     }
 
+    
+    @IBAction func playGamePressed(sender: UIButton) {
+        dealer = Dealer()
+        let winner = playGame()
+        winnerLabel.text = winner.name
+    }
+    
 }
