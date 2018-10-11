@@ -9,9 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var dealer: Dealer = Dealer()
+    
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    
+    @IBAction func playGamePresses(_ sender: Any) {
+        var dealerPressed: Dealer = Dealer()
+        dealer = dealerPressed
+        var winner = playGame()
+        
+        winnerLabel.text = winner.name
+        
+    }
+    
 
     func playGame() -> Player {
+        
         var turn = "player"
         dealer.deal()
 
@@ -21,11 +35,17 @@ class ViewController: UIViewController {
 
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
+            dealer.turn(player: player)
             turn = turn == "player" ? "house" : "player"
         }
 
         dealer.award()
+        
+        print("Player's hand value is : \(dealer.player.handValue)")
+        print("House's hand value is : \(dealer.house.handValue)")
+        print("The winner is : \(dealer.winner!.name)")
+        
+        
         return dealer.winner!
     }
 
