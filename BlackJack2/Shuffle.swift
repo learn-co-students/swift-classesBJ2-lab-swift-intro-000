@@ -8,15 +8,16 @@
 
 import Foundation
 
-extension MutableCollectionType where Index == Int {
+extension MutableCollection where Index == Int {
     mutating func shuffleInPlace() {
-        // Borrowed from: <https://codedump.io/share/OCJt0TU9IfzE/1/how-do-i-shuffle-an-array-in-swift>
-        guard count > 1 else { return }
-
-        for i in 0..<count - 1 {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + i
-            guard i != j else { continue }
-            swap(&self[i], &self[j])
+        // empty and single-element collections don't shuffle
+        if count < 2 { return }
+        
+        for i in startIndex ..< endIndex - 1 {
+            let j = Int(arc4random_uniform(UInt32(endIndex - i))) + 1
+            if i != j {
+                self.swapAt(i, j)
+            }
         }
     }
 }
